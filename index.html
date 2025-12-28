@@ -1,282 +1,167 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Second-year CS student portfolio and internship profile." />
-  <title>Your Name | CS Student</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your Name — Software / CS</title>
+    <meta name="description" content="Minimal portfolio focused on projects." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-  <link rel="stylesheet" href="styles.css" />
-</head>
-
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <!-- Optional avatar -->
-        <!-- <img class="avatar" src="assets/avatar.jpg" alt="Your Name" /> -->
-        <div>
-          <h1 class="name">Your Name</h1>
-          <p class="tagline">Second-year Computer Science student • Seeking Software Engineering Internship</p>
+  <body>
+    <header class="wrap">
+      <nav class="nav">
+        <a class="brand" href="#top">Your Name</a>
+        <div class="links">
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
         </div>
-      </div>
-
-      <nav class="nav" aria-label="Primary">
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
       </nav>
-    </div>
-  </header>
 
-  <main id="main">
-    <!-- HERO -->
-    <section class="section hero">
-      <div class="container hero-grid">
-        <div>
-          <h2 class="headline">
-            I build practical software and love shipping clean, well-tested code.
-          </h2>
+      <section id="top" class="hero">
+        <h1>CS student building practical software.</h1>
+        <p class="sub">
+          Minimal portfolio. Projects first. (Replace this sentence with 1 line about what you like building.)
+        </p>
 
-          <p class="summary">
-            Short 2–3 sentence pitch. Mention what you’re good at, what you like building,
-            and what roles you’re applying for (e.g., backend, full-stack, systems).
-          </p>
-
-          <div class="cta-row">
-            <a class="btn primary" href="assets/resume.pdf" target="_blank" rel="noreferrer">Resume (PDF)</a>
-            <a class="btn" href="#projects">View Projects</a>
-          </div>
-
-          <ul class="link-row" aria-label="Quick links">
-            <li><a href="https://github.com/yourusername" target="_blank" rel="noreferrer">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noreferrer">LinkedIn</a></li>
-            <li><a href="mailto:you@email.com">you@email.com</a></li>
-            <!-- Optional: LeetCode / Codeforces / Blog -->
-            <!-- <li><a href="https://leetcode.com/yourusername" target="_blank" rel="noreferrer">LeetCode</a></li> -->
-          </ul>
+        <div class="cta">
+          <a class="btn" href="https://github.com/yourusername" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn ghost" href="resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+          <a class="btn ghost" href="#projects">View projects</a>
         </div>
 
-        <aside class="card highlight">
-          <h3>Currently</h3>
-          <ul class="bullets">
-            <li>Building: <strong>Project Name</strong> (1-line description)</li>
-            <li>Learning: <strong>Topic</strong> (e.g., distributed systems / compilers)</li>
-            <li>Open to: <strong>2026 Summer Internships</strong></li>
-          </ul>
-        </aside>
-      </div>
-    </section>
+        <div class="meta">
+          <span>Adelaide, AU</span>
+          <span>•</span>
+          <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noreferrer">LinkedIn</a>
+          <span>•</span>
+          <a href="mailto:you@email.com">you@email.com</a>
+        </div>
+      </section>
+    </header>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <div class="container">
+    <main class="wrap">
+      <section id="projects" class="section">
         <div class="section-head">
           <h2>Projects</h2>
-          <p>Pick 2–4 strong projects. Each should show impact, scope, and your stack.</p>
+          <p class="hint">2–4 strong projects beats 10 small ones.</p>
         </div>
 
-        <div class="grid cards">
+        <div class="grid">
+          <!-- Project card -->
           <article class="card">
             <div class="card-top">
-              <h3>Project Title</h3>
-              <span class="pill">Java • SQLite</span>
+              <h3>Student Course Manager (C++ / SQLite)</h3>
+              <div class="tags">
+                <span>C++</span><span>SQLite</span><span>CLI</span>
+              </div>
             </div>
             <p>
-              1–2 lines: what it does + who it’s for. Mention core features.
+              Fast CLI app to manage students, courses, and enrollments with a normalized SQLite schema.
+              Focused on clean architecture and reliable persistence.
             </p>
-            <ul class="bullets">
-              <li>Implemented X to achieve Y (e.g., reduced latency, improved UX).</li>
-              <li>Added tests / CI / validation / caching.</li>
-            </ul>
             <div class="card-links">
-              <a href="https://github.com/yourusername/project" target="_blank" rel="noreferrer">Code</a>
-              <a href="#" target="_blank" rel="noreferrer">Live Demo</a>
-              <!-- Remove demo link if you don't have one -->
+              <a href="https://github.com/yourusername/project" target="_blank" rel="noreferrer">Repo</a>
+              <a href="#" target="_blank" rel="noreferrer">Demo</a>
             </div>
           </article>
 
           <article class="card">
             <div class="card-top">
-              <h3>Project Title</h3>
-              <span class="pill">React • Node</span>
+              <h3>Project Name</h3>
+              <div class="tags">
+                <span>Tech</span><span>Tech</span>
+              </div>
             </div>
-            <p>Clear, direct description of the project and why it matters.</p>
-            <ul class="bullets">
-              <li>Designed API endpoints and integrated auth.</li>
-              <li>Deployed with GitHub Actions.</li>
-            </ul>
+            <p>
+              One sentence on what it does + one sentence on what you learned / why it matters.
+            </p>
             <div class="card-links">
-              <a href="https://github.com/yourusername/project" target="_blank" rel="noreferrer">Code</a>
+              <a href="#">Repo</a>
+              <a href="#">Write-up</a>
             </div>
           </article>
 
           <article class="card">
             <div class="card-top">
-              <h3>Project Title</h3>
-              <span class="pill">C++ • Algorithms</span>
+              <h3>Project Name</h3>
+              <div class="tags">
+                <span>Tech</span><span>Tech</span>
+              </div>
             </div>
-            <p>A project that shows fundamentals: data structures, performance, systems.</p>
-            <ul class="bullets">
-              <li>Optimized from O(n²) → O(n log n).</li>
-              <li>Wrote benchmarks and profiled hotspots.</li>
-            </ul>
+            <p>
+              Keep it concrete: what problem, what you built, and one measurable/clear outcome.
+            </p>
             <div class="card-links">
-              <a href="https://github.com/yourusername/project" target="_blank" rel="noreferrer">Code</a>
+              <a href="#">Repo</a>
             </div>
           </article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>Skills</h2>
-          <p>Keep it honest. Recruiters scan this fast.</p>
-        </div>
-
-        <div class="grid two">
-          <div class="card">
-            <h3>Languages</h3>
-            <p class="muted">List in order of confidence.</p>
-            <div class="tags">
-              <span class="tag">Python</span>
-              <span class="tag">Java</span>
-              <span class="tag">C++</span>
-              <span class="tag">JavaScript</span>
-              <span class="tag">SQL</span>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3>Tools / Tech</h3>
-            <p class="muted">Frameworks, libraries, tooling.</p>
-            <div class="tags">
-              <span class="tag">Git</span>
-              <span class="tag">Linux</span>
-              <span class="tag">Docker</span>
-              <span class="tag">SQLite / Postgres</span>
-              <span class="tag">React</span>
-              <span class="tag">Node.js</span>
-              <span class="tag">CI/CD</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section">
-      <div class="container">
+      <section id="experience" class="section">
         <div class="section-head">
           <h2>Experience</h2>
-          <p>Internships, part-time work, volunteering, clubs—anything with responsibility.</p>
+          <p class="hint">It’s fine if this is mostly uni + clubs + volunteering.</p>
         </div>
 
-        <div class="stack">
-          <article class="card">
-            <div class="card-top">
-              <h3>Role Title • Company/Org</h3>
-              <span class="muted">Month YYYY – Month YYYY</span>
+        <div class="list">
+          <div class="row">
+            <div>
+              <div class="row-title">Role / Team</div>
+              <div class="row-sub">Company / Club • City</div>
             </div>
-            <p class="muted">1-line context of what the team/product was.</p>
-            <ul class="bullets">
-              <li>Built/owned X feature using Y, resulting in Z.</li>
-              <li>Collaborated with A/B/C; wrote docs and tests.</li>
-            </ul>
-          </article>
+            <div class="row-meta">2025 — Present</div>
+          </div>
+          <ul class="bullets">
+            <li>Did X (what you built / owned) using Y.</li>
+            <li>Improved/learned Z (keep it specific).</li>
+          </ul>
 
-          <article class="card">
-            <div class="card-top">
-              <h3>Role Title • Club / Society</h3>
-              <span class="muted">Month YYYY – Present</span>
+          <div class="divider"></div>
+
+          <div class="row">
+            <div>
+              <div class="row-title">CS Degree</div>
+              <div class="row-sub">University Name</div>
             </div>
-            <ul class="bullets">
-              <li>Led X initiative; organized Y events.</li>
-              <li>Mentored peers / contributed to open source.</li>
-            </ul>
-          </article>
+            <div class="row-meta">2024 — 2027</div>
+          </div>
+          <ul class="bullets">
+            <li>Relevant: Data Structures, Algorithms, Databases, OS, Networks (only list what you’ve done).</li>
+          </ul>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- EDUCATION -->
-    <section id="education" class="section alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>Education</h2>
-        </div>
-
-        <div class="grid two">
-          <article class="card">
-            <h3>Bachelor of Computer Science</h3>
-            <p class="muted">University Name • Expected YYYY</p>
-            <ul class="bullets">
-              <li>GPA/WAM: (optional)</li>
-              <li>Relevant coursework: Data Structures, Algorithms, OS, DB, Networks</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3>Awards / Certifications</h3>
-            <ul class="bullets">
-              <li>Scholarship / Dean’s List (optional)</li>
-              <li>AWS Cloud Practitioner (optional)</li>
-              <li>Hackathon finalist (optional)</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-      <div class="container">
+      <section id="contact" class="section">
         <div class="section-head">
           <h2>Contact</h2>
-          <p>Best ways to reach you.</p>
+          <p class="hint">Make it effortless to reach you.</p>
         </div>
 
-        <div class="grid two">
-          <div class="card">
-            <h3>Message</h3>
-            <p class="muted">
-              Email is best. If you want, add a short line like “Happy to chat”.
-            </p>
-            <div class="cta-row">
-              <a class="btn primary" href="mailto:you@email.com">Email me</a>
-              <a class="btn" href="assets/resume.pdf" target="_blank" rel="noreferrer">Resume</a>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3>Links</h3>
-            <ul class="bullets">
-              <li><a href="https://github.com/yourusername" target="_blank" rel="noreferrer">GitHub</a></li>
-              <li><a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noreferrer">LinkedIn</a></li>
-              <li><a href="#" target="_blank" rel="noreferrer">Portfolio / Blog (optional)</a></li>
-            </ul>
-          </div>
+        <div class="contact">
+          <a class="contact-item" href="mailto:you@email.com">
+            <span>Email</span><span class="mono">you@email.com</span>
+          </a>
+          <a class="contact-item" href="https://github.com/yourusername" target="_blank" rel="noreferrer">
+            <span>GitHub</span><span class="mono">@yourusername</span>
+          </a>
+          <a class="contact-item" href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noreferrer">
+            <span>LinkedIn</span><span class="mono">/in/yourusername</span>
+          </a>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p class="muted">© <span id="year"></span> Your Name. Built with HTML/CSS. Hosted on GitHub Pages.</p>
-      <a class="muted" href="#top" aria-label="Back to top">↑ Top</a>
-    </div>
-  </footer>
+      <footer class="footer">
+        <span class="mono">© <span id="y"></span> Your Name</span>
+        <span class="dot">•</span>
+        <a class="mono" href="#top">Back to top</a>
+      </footer>
+    </main>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-</body>
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
