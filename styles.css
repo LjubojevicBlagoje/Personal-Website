@@ -21,6 +21,8 @@ body {
   position: relative;
 }
 
+a { color: inherit; text-decoration: none; } a:hover { opacity: 0.85; }
+
 body::before {
   content: "";
   position: fixed;
@@ -33,8 +35,6 @@ body::before {
     radial-gradient(1200px 600px at 30% -10%, rgba(125, 211, 252, 0.18), transparent 55%),
     radial-gradient(900px 500px at 95% 10%, rgba(167, 139, 250, 0.12), transparent 55%);
 }
-
-a { color: inherit; text-decoration: none; } a:hover { opacity: 0.85; }
 
 .wrap {
   width: min(980px, calc(100% - 40px));
