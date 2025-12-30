@@ -28,7 +28,6 @@ body::before {
   pointer-events: none;
   z-index: -1;
 
-  /* the glow layers (top only) */
   background:
     radial-gradient(1200px 600px at 30% -10%, rgba(125, 211, 252, 0.18), transparent 55%),
     radial-gradient(900px 500px at 95% 10%, rgba(167, 139, 250, 0.12), transparent 55%);
